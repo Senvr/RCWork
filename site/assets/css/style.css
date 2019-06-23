@@ -1,0 +1,25 @@
+
+body{	
+		font: 25px Georgia, sans-serif;
+		font-size: 20px;
+		margin: auto;
+		width: 50%;
+		background-color: #f2f2f2;
+}
+.content{
+		background-color: #e0e0eb;
+		text-align: center;
+		border: 3px solid black;
+}
+.info{
+		background-color: #e0e0eb;
+		text-align: center;
+		font-size=15px;
+		border: 3px solid black;
+}
+
+.footer{
+		background-color: #e0e0eb;
+		text-align: center;
+		border: 3px solid black;
+}
