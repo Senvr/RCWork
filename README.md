@@ -4,9 +4,13 @@ This is the SOFTWARE for the shit I'm doing.
 
 **Parts** (Not full kit just what I have right now):
 Tank Chassis(\*NOTE): https://www.amazon.com/SZDoit-Chassis-Control-Platform-Graduation/dp/B07BHFM9PJ/ref=pd_sbs_21_1/135-4595457-7426542
+
 Raspi 0w Kit (sd not included): https://www.amazon.com/Vilros-Raspberry-Starter-Power-Premium/dp/B0748MPQT4/ref=sr_1_3
+
 L298N Motor Driver (x2): https://www.amazon.com/Qunqi-Controller-Module-Stepper-Arduino/dp/B014KMHSW6/ref=sr_1_2_sspa
+
 Arduino Nano (ATmega328P): https://www.amazon.com/ATmega328P-Microcontroller-Board-Cable-Arduino/dp/B00NLAMS9C/ref=sr_1_13
+
 
 *\*NOT What i have! I have a different one I got for a good deal. But it doesn't matter much. 
 Consider:
