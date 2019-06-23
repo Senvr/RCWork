@@ -35,6 +35,7 @@ Arduino code. Upload via arduino uploader.
 **Install: motion (raspi)**
 If there's no script, install and configure a motion server for MJPEG. You will probably have to update `control.php` in `site/` code-wise.
 Tip: Open the MJPEG stream up in a browser, inspect element and copy the code that displays the stream and replace it with the code in control.php. I'll try to comment it.
-
+**Plug: Arduino into Raspi (usb)** (you may need a USB hub)
+Plug the cable to both power and talk via serial. That's how I did it. That's how I programmed it. It's not impossible to fix , infact, i made the serial communicator about as simple and flexible as possible. It may be as simple as just adding an entry to the devices list, or rewriting some shit.
 ### This is developing software.
 If you use this, READ THE LISENCE. This is not for beginners - you are expected to change almost every file and do things manually until I myself have a framework.
