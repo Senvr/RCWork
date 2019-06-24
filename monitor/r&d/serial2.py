@@ -1,12 +1,12 @@
-import time, sys, os, serial
+import time, sys, os, serial, re
 
 locations=['/dev/ttyUSB2','/dev/ttyUSB1','/dev/ttyUSB0']
 print("Initializing...")
-baud=9600
+baud=115200
 delim="_"
 def writeData(value,type):
     f=open(os.path.dirname(os.path.abspath(__file__))+"/data/"+type,"w")
-    f.write(value);
+    f.write(value) 
     f.close()
 def processData(raw):
     if raw == "":
@@ -19,9 +19,10 @@ def processData(raw):
         exit()
     if data.startswith("dist_"):
         dist=data[5:].strip()
-        print("DISTANCE: "+dist)
+        ##print("DISTANCE: "+dist)
         writeData(dist,"dist")
         return dist
+    print(data)
      
 def scan():
     time.sleep(1)
@@ -63,6 +64,21 @@ print("Established connection on port  "+device,end="\r")
 print("\nAwaiting activity",end="\n")
 
 while True:
-    bytes=ser.readline()
+    try: 
+        bytes=ser.readline()
+    except Exception as e:
+        print("Readline fail: "+e)
+        try:
+            ser.close()
+        except:
+            print("Failed to close lol")
+        scan()
     print("Data recieved, processing")
     processData(bytes)
+    input=""
+    infile=open(os.path.dirname(os.path.abspath(__file__))+"/data/webin","r")
+    input=re.sub('\W', '', infile.read().rstrip("\n\r").replace("\n",""))
+    #re.sub(ur'[\W_]+', u'', s, flags=re.UNICODE)
+    print(input)
+    ser.write(input.strip().encode("utf-8"))
+    infile.close()
