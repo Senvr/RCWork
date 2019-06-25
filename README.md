@@ -1,6 +1,6 @@
-# Lil-Wolfee (offical project name)
+# RC Car Framework 
 Software for a hobbled-together RC tank (named Wolfee or "Jonny").
-This is the SOFTWARE for the shit I'm doing. 
+This is the SOFTWARE for the shit I'm doing. It's designed to be as flexible as possible for all sorts of applications. Also, I'm just a crude programmer.
 
 **Parts** (Not full kit just what I have right now):
 
